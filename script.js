@@ -1,7 +1,14 @@
 // Fungsi untuk memulai musik
 function playMusic() {
   const music = document.getElementById('background-music');
+
   music.play();
+
+  // FORCE LOOP when music ends
+  music.addEventListener('ended', function () {
+    music.currentTime = 0;
+    music.play();
+  });
 }
 window.addEventListener('DOMContentLoaded', function() {
   playMusic();
@@ -446,6 +453,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
