@@ -169,7 +169,7 @@ new TypeIt("#teks2", {
 
 
 new TypeIt("#trims", {
-  strings: ["Thank you."],
+  strings: ["Terimakasih."],
   startDelay: 2000,
   speed: 150,
   loop: false,
@@ -446,8 +446,3 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
-
-
-
-
-
