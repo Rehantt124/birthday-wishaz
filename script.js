@@ -161,7 +161,7 @@ new TypeIt("#teks1", {
 }).go();
 
 new TypeIt("#teks2", {
-  strings: ["With or without me, may the universe always find its way to make you happy, in every possible way.", " ", " Thank you for holding on and making it this far — Love you Forever.", " ", "- My Dearest Alisha"],
+  strings: ["With or without me, may the universe always find its way to make you happy, in every possible way.", " ", " Thank you for holding on to our love and making it this far — Love you Forever.", " ", "- My Dearest Alisha"],
   startDelay: 2000,
   speed: 75,
   waitUntilVisible: true
@@ -446,5 +446,6 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
