@@ -1,14 +1,23 @@
 // Fungsi untuk memulai musik
+let playCount = 0;
+
 function playMusic() {
   const music = document.getElementById('background-music');
 
+  // Prevent restarting if already played twice
+  if (playCount >= 2) return;
+
   music.play();
 
-  // FORCE LOOP when music ends
-  music.addEventListener('ended', function () {
-    music.currentTime = 0;
-    music.play();
-  });
+  music.onended = function () {
+    playCount++;
+
+    if (playCount < 2) {
+      music.currentTime = 0;
+      music.play(); // play again (2nd time)
+    }
+    // after 2nd time, it stops naturally
+  };
 }
 window.addEventListener('DOMContentLoaded', function() {
   playMusic();
@@ -453,6 +462,7 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
 
 
 
