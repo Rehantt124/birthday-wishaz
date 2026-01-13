@@ -154,7 +154,7 @@ const _slideEnam = function () {
 
 
 new TypeIt("#teks1", {
-  strings: ["Today, I send all my most beautiful prayers to the sky, just for you.", "May everything that once broke you become the reason you grow even stronger.", "May the world always be gentle with you and protect you wherever you are.", "May your days always be wrapped in endless love that never fades." , "May every step you take be blessed with ease until you reach every dream your heart desires."],
+  strings: ["Today, I send all my most beautiful Love to the sky, just for you.", "May everything that once broke you become the reason you grow even stronger.", "May the world always be gentle with you and protect you wherever you are.", "May your days always be wrapped in endless love that never fades." , "May every step you take be blessed with ease until you reach every dream your heart desires."],
   startDelay: 4000,
   speed: 75,
   waitUntilVisible: true
@@ -446,3 +446,4 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
